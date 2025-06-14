@@ -32,29 +32,33 @@ export const Password = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-4">
-      <div className="w-full max-w-md space-y-4">
-        <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => {
-              setPassword(e.target.value);
-              setError(""); // Clear error when user starts typing
-            }}
-            className="border p-3 rounded-md text-center text-lg"
-            placeholder="Enter password"
-          />
-          <Button type="submit" className="p-3 text-lg">
-            Enter
-          </Button>
-        </form>
-        {error && (
-          <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-md">
-            <p className="text-red-600 text-center">{error}</p>
-          </div>
-        )}
+    <div className="w-full ">
+      <div className="w-[300px] mx-auto flex flex-col items-center justify-center p-4">
+        <div className="w-full  space-y-4">
+          <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => {
+                setPassword(e.target.value);
+                setError(""); // Clear error when user starts typing
+              }}
+              className="border p-3 rounded-md text-center text-lg"
+              placeholder="Enter password"
+            />
+            <Button type="submit" className="p-3 text-lg">
+              Enter
+            </Button>
+          </form>
+        </div>
+
       </div>
-    </div>
+
+      {error && (
+        <div className="max-w-[400px] mx-auto p-3 bg-red-50 border border-red-200 rounded-sm">
+          <p className="text-red-600 text-center">{error}</p>
+        </div>
+      )}
+    </div >
   );
 };

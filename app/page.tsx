@@ -14,7 +14,6 @@ export default function Home() {
   }, []);
 
   if (!isAuthenticated) {
-    console.log(isAuthenticated);
     return null; // Don't show anything if not authenticated
   }
 
