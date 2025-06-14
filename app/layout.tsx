@@ -1,20 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "~/lib/utils";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { NavBar } from "./components/navbar";
+import { jules } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Rebekah & Sam",
+  description: "Personal website of Otis Bencivengo",
 };
 
 export default function RootLayout({
@@ -23,12 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <main className={cn('max-w-screen-xl w-full md:px-4 mx-auto')}>
-          {children}
+    <html lang="en" className={jules.className}>
+      <body className={cn("w-full h-dvh mx-auto antialiased")}>
+        <main className={cn("w-full h-dvh mx-auto")}>
+          <div className="h-12/12">{children}</div>
         </main>
       </body>
     </html>
