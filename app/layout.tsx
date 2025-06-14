@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en" className={jules.className}>
       <body className={cn("w-full h-dvh mx-auto antialiased")}>
         <main className={cn("w-full h-dvh mx-auto")}>
-          <div className="h-12/12">{children}</div>
+          <div className="h-12/12 mt-5">{children}</div>
         </main>
       </body>
     </html>
