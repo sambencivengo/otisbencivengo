@@ -44,7 +44,7 @@ export const Password = () => {
                 setError(""); // Clear error when user starts typing
               }}
               className="border p-3 rounded-md text-center text-lg"
-              placeholder="Enter password"
+              placeholder="Password"
             />
             <Button type="submit" className="p-3 text-lg">
               Enter
