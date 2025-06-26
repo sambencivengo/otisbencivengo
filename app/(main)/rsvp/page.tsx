@@ -1,7 +1,6 @@
 "use client";
 
 import {useEffect} from "react";
-import WeddingTitle from "../../components/weddingTitle";
 
 // Declare Tally global type
 declare global {
