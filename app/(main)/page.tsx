@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 import Cookies from "js-cookie";
 import Image from "next/image";
+import WeddingTitle from "../components/weddingTitle";
 
 export default function Home() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -18,7 +19,8 @@ export default function Home() {
   }
 
   return (
-    <main className="flex">
+    <main className="flex flex-col">
+      <WeddingTitle />
       <div className="mx-auto">
         <Image src="/boat.png" width={800} height={600} alt="Drawing of a boat at sea" />
       </div>
