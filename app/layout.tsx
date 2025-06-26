@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
+import type {Metadata} from "next";
 import "./globals.css";
-import { cn } from "~/lib/utils";
-import { jules } from "./fonts";
+import {cn} from "~/lib/utils";
+import {jules} from "./fonts";
 
 export const metadata: Metadata = {
   title: "Rebekah & Sam",
@@ -15,11 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={jules.className}>
-      <body className={cn("w-full h-dvh mx-auto antialiased")}>
-        <main className={cn("w-full h-dvh mx-auto")}>
-          <div className="h-12/12 mt-5">{children}</div>
-        </main>
-      </body>
+      <body className={cn("w-full h-screen  mx-auto antialiased")}>{children}</body>
     </html>
   );
 }
