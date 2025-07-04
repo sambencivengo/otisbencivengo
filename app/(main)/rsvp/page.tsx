@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
+import React from "react";
+import { Spinner } from "~/app/components/spinner";
 import WeddingTitle from "~/app/components/weddingTitle";
 
 // Declare Tally global type
@@ -13,7 +14,8 @@ declare global {
 }
 
 export default function Page() {
-  useEffect(() => {
+  const [isLoading, setIsLoading] = React.useState(true);
+  React.useEffect(() => {
     // Load Tally embed script
     const script = document.createElement("script");
     script.src = "https://tally.so/widgets/embed.js";
@@ -48,8 +50,13 @@ export default function Page() {
     <div className="w-full h-full max-w-4xl mx-auto mb-16 md:mb-2">
       {/* Mobile wedding title - only visible on mobile */}
       <WeddingTitle />
-      <iframe data-tally-src="https://tally.so/embed/nGV6xp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height={600} frameBorder="0" marginHeight={0} marginWidth={0} title="RSVP to Bekah & Sam's Wedding in New York" className="w-full px-4" />
-
+      {/* Loading spinner */}
+      {isLoading && (
+        <div className="p-10 flex justify-center items-center  z-10">
+          <Spinner />
+        </div>
+      )}
+      <iframe onLoad={() => setIsLoading(false)} data-tally-src="https://tally.so/embed/nGV6xp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height={600} frameBorder="0" marginHeight={0} marginWidth={0} title="RSVP to Bekah & Sam's Wedding in New York" className="w-full px-4" />
     </div>
   );
 }
