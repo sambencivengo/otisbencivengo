@@ -44,7 +44,7 @@ export default function MainLayout({
         </div>
       </nav>
 
-      <div className="p-4 sm:p-6 md:p-8 lg:p-15">{children}</div>
+      <div className="p-4 sm:p-6 mx-auto max-w-[750px] w-full">{children}</div>
     </main>
   );
 }

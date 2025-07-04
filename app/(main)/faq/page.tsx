@@ -13,7 +13,7 @@ function QuestionAndAnswer({ question, answer }: { question: string; answer: str
 export default function Page() {
   return (
     <div className="max-w-4xl mx-auto px-6 pt-4">
-      <h1 className="text-xl md:text-3xl font-bold text-center mb-12 tracking-[12px] md:tracking-[20px] font-cormorant">FREQUENTLY ASKED QUESTIONS</h1>
+      <h1 className="text-xl md:text-3xl font-bold text-center mb-12 tracking-[12px] md:tracking-[20px] font-cormorant">FAQ</h1>
 
       {/* FAQ Section */}
       <section className="mb-16">
