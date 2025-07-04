@@ -1,7 +1,7 @@
 import { randomUUID } from 'crypto';
 import faq from './faq.json'
 
-export function QuestionAndAnswer({ question, answer }: { question: string; answer: string }) {
+function QuestionAndAnswer({ question, answer }: { question: string; answer: string }) {
 
   return (
     <div className='flex flex-col gap-1'>
