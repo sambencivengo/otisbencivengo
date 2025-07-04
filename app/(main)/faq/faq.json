@@ -1,0 +1,40 @@
+[
+	 {
+"q": "Can I bring my kid(s)?",
+"a": "We love kids, but no."
+	},
+	 {
+
+"q": "Can I bring a plus one? ",
+"a": "Due to the limited space at each venue, we cannot accommodate more people than are explicitly invited."
+	},
+	 {
+
+"q": "How do I get from where the boat docks in Brooklyn to the reception?",
+"a": "The boat will drop us off approximately 2.5 miles away from the restaurant. Barring any unforeseen circumstances, the trip should be about 15 minutes in a cab, though we encourage getting to the reception however you see fit… citibikes, buses, or a 30 minute subway ride are all options. You can reach out to us if you need help."
+
+
+	},
+	 {
+
+"q": "I’m visiting, what neighborhood should I stay in?",
+"a": "Downtown Brooklyn is a good centrally-located neighborhood between the reception and afterparty."
+
+	},
+	 {
+
+"q": "What should I wear?",
+"a": "Formal attire, but not black tie."
+
+	},
+	 {
+
+"q": "I’m always fashionably late, will the boat really leave without me if I’m not there at 4:00?",
+ "a": "Yes, sadly the boat will leave without you and you will be missed… but head to the reception to meet us there at 6:30! We encourage arriving at Chelsea piers a little early to avoid this possibility."
+
+	},
+	{
+"q": "I get seasick, will I be ok on the boat?",
+"a": "Bekah understands your pain. While there are tidal currents in the waters surrounding Manhattan, the conditions are not like the open ocean. People hop on ferries between Brooklyn, Queens, and Manhattan every day. Based on our  experience, it should be a relatively easy ride. If you are concerned, take some dramamine."
+	}
+]

@@ -1,4 +1,5 @@
 import localFont from 'next/font/local';
+import { Cormorant_Garamond, EB_Garamond } from 'next/font/google';
 
 export const jules = localFont({
   src: [
@@ -31,4 +32,18 @@ export const jules = localFont({
   variable: '--font-jules',
   display: 'swap',
   preload: true,
+});
+
+export const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-cormorant',
+  display: 'swap',
+});
+
+export const ebGaramond = EB_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-eb-garamond',
+  display: 'swap',
 });

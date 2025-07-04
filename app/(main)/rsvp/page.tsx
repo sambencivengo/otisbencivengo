@@ -1,6 +1,7 @@
 "use client";
 
-import {useEffect} from "react";
+import { useEffect } from "react";
+import WeddingTitle from "~/app/components/weddingTitle";
 
 // Declare Tally global type
 declare global {
@@ -44,16 +45,11 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div className="w-full h-full max-w-4xl mx-auto mb-16 md:mb-2">
       {/* Mobile wedding title - only visible on mobile */}
-      <div className="md:hidden mb-6">
-        <div className="text-center">
-          <p className="text-2xl font-jules font-bold">Bekah & Sam</p>
-          <p className="text-sm tracking-wider">10 | 10 | 2025</p>
-        </div>
-      </div>
+      <WeddingTitle />
+      <iframe data-tally-src="https://tally.so/embed/nGV6xp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height={600} frameBorder="0" marginHeight={0} marginWidth={0} title="RSVP to Bekah & Sam's Wedding in New York" className="w-full px-4" />
 
-      <iframe data-tally-src="https://tally.so/embed/nGV6xp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height={225} frameBorder="0" marginHeight={0} marginWidth={0} title="RSVP to Bekah & Sam's Wedding in New York" className="w-full" />
     </div>
   );
 }
