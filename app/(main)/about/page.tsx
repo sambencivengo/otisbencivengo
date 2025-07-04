@@ -76,7 +76,7 @@ export default function Page() {
         <LocationLinkWrapper link="https://maps.app.goo.gl/q32AU3hkMYBSBQU6A">
           <p className="font-jules">Insa</p>
           <p className="font-cormorant">328 Douglass St.</p>
-          <p className="font-cormorant">, Brooklyn, NY 11217</p>
+          <p className="font-cormorant">Brooklyn, NY 11217</p>
         </LocationLinkWrapper>
       </WeddingDetail>
     </div >
