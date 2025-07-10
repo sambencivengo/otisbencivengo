@@ -1,11 +1,11 @@
 "use client";
 
-import {useRouter} from "next/navigation";
-import {Button} from "~/components/ui/button";
-import React, {useEffect} from "react";
+import { useRouter } from "next/navigation";
+import { Button } from "~/components/ui/button";
+import React, { useEffect } from "react";
 import Cookies from "js-cookie";
-import {Input} from "~/components/ui/input";
-import {ArrowRight} from "lucide-react";
+import { Input } from "~/components/ui/input";
+import { ArrowRight } from "lucide-react";
 
 export const Password = () => {
   const [password, setPassword] = React.useState("");
@@ -28,7 +28,7 @@ export const Password = () => {
     }
     if (password === process.env.NEXT_PUBLIC_SITE_PASSWORD) {
       // Store authentication state in cookie
-      Cookies.set("isAuthenticated", "true", {expires: 365}); // Cookie expires in 1 year
+      Cookies.set("isAuthenticated", "true", { expires: 60 }); // Cookie expires in 1 year
       router.push("/");
     } else {
       setError("Incorrect password. Please try again.");
@@ -42,13 +42,13 @@ export const Password = () => {
         <div className="w-full">
           <form onSubmit={handleSubmit} className="flex flex-row">
             <Input
-              type="password"
               value={password}
               onChange={(e) => {
                 setPassword(e.target.value);
                 setError(""); // Clear error when user starts typing
               }}
-              className="border p-3 rounded-md text-center text-lg rounded-r-none"
+              style={{ fontSize: "24px" }}
+              className="font-cormorant font-bold rounded-md text-center rounded-r-none"
               placeholder="Password"
             />
             <Button type="submit" className=" text-lg rounded-l-none">
