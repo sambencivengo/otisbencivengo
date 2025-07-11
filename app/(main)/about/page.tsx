@@ -46,7 +46,7 @@ export default function Page() {
     <div className="max-w-4xl mx-auto px-6 py-4">
       <h1 className="text-xl md:text-3xl font-bold text-center mb-12 tracking-[18px] md:tracking-[24px] font-cormorant">WEDDING DETAILS</h1>
       <WeddingDetail timeframe="4PM - 6PM" details="We will set sail for our wedding ceremony aboard a boat departing promptly at 4:00 PM from Chelsea Piers. The ceremony will take place on the water during a two-hour cruise, so we kindly ask all guests to arrive early to ensure we leave on time. If you miss the boat, please meet us at the reception! At 6:00 PM, the boat will dock at the Brooklyn Bridge Marina.
-" title={<>{`CEREMONY`}<br />{`ON THE BOAT`}</>} alertText={"Guests will need to arrange transportation from the ceremony to the reception. Subway, Taxi, and rideshare will be accessible."} >
+" title={<>{`CEREMONY`}<br />{`ON THE BOAT`}</>} alertText={"Guests will need to arrange transportation from the ceremony to the reception. Subway, taxi, and rideshare will be accessible."} >
         <div className="flex flex-col md:flex-row gap-10">
           <LocationLinkWrapper link="https://maps.app.goo.gl/xhX71braLPq2HVvL7">
             <p className="font-jules">Pick up</p>
