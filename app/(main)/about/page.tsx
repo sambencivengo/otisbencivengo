@@ -64,7 +64,7 @@ export default function Page() {
         </div>
       </WeddingDetail >
 
-      <WeddingDetail timeframe="6:30PM - 10:30PM" details="Our reception will begin at 6:30 at one of our favorite resturants in Brooklyn: La Conda Vinni e Olli. Dinner will be served family-style, with vegetarian options available." title={<>{`RECEPTION`}<br />{`AT LOCANDA`}</>} >
+      <WeddingDetail timeframe="6:30PM - 10:30PM" details="Our reception will begin at 6:30 at one of our favorite resturants in Brooklyn: Loconda Vinni e Olli. Dinner will be served family-style, with vegetarian options available." title={<>{`RECEPTION`}<br />{`AT LOCANDA`}</>} >
         <LocationLinkWrapper link="https://maps.app.goo.gl/q32AU3hkMYBSBQU6A">
           <p className="font-jules">Locanda Vini & Olii</p>
           <p className="font-cormorant">129 Gates Ave.</p>
