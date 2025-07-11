@@ -11,10 +11,17 @@ export default function Page() {
         <p className="text-xl leading-7 mb-4">
           Your presence is the greatest gift!
 
+          <br />
+          <br />
           We are so grateful to have you join us in New York City to celebrate our wedding, that alone means the world to us. We truly don&apos;t expect any gifts, especially from those who traveled to be with us.
 
-          If you&apos;d still like to contribute something, we would be honored if you made a donation to Palestine Legal, an organization that protects the civil and constitutional rights of people in the U.S. who speak out for Palestinian freedom. Or if you&apos;d prefer, you can donate to our honeymoon fund.
+          <br />
+          <br />
+          If you&apos;d still like to contribute something, we would be honored if you made a donation to the
+          Gaza Sunbirds, a Palestinian para-cycling organization. Due to the ongoing genocide, Gaza Sunbirds have diverted all of it's resources towards providing food and aid in Gaza. Or if you&apos;d prefer, you can donate to our honeymoon fund.
 
+          <br />
+          <br />
           Thank you for your love and support!
         </p>
         <div className="flex flex-col items-center gap-3 mt-8 underline justify-center w-full">
