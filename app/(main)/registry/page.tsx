@@ -17,7 +17,7 @@ export default function Page() {
 
           Thank you for your love and support!
         </p>
-        <div className="flex flex-col items-center gap-3 justify-center w-full">
+        <div className="flex flex-col items-center gap-3 mt-8 underline justify-center w-full">
           <Link className="text-3xl font-medium hover:text-wedding-red" href={"https://palestinelegal.org/donate"}>
             Palestine Legal
           </Link>
