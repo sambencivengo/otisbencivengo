@@ -17,7 +17,7 @@ export default function Page() {
 
           <br />
           <br />
-          If you&apos;d still like to contribute something, we would be honored if you made a donation to the
+          If you&apos;d still like to contribute something, we would be honored if you made a donation to
           Gaza Sunbirds, a Palestinian mutual aid organization providing food and aid in Gaza. Or if you&apos;d prefer, you can donate to our honeymoon fund.
 
           <br />
