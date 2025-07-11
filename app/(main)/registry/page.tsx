@@ -18,7 +18,7 @@ export default function Page() {
           <br />
           <br />
           If you&apos;d still like to contribute something, we would be honored if you made a donation to the
-          Gaza Sunbirds, a Palestinian para-cycling organization. Due to the ongoing genocide, Gaza Sunbirds have diverted all of its resources towards providing food and aid in Gaza. Or if you&apos;d prefer, you can donate to our honeymoon fund.
+          Gaza Sunbirds, a Palestinian para-cycling organization. Due to the ongoing genocide, Gaza Sunbirds has diverted all of its resources towards providing food and aid in Gaza. Or if you&apos;d prefer, you can donate to our honeymoon fund.
 
           <br />
           <br />
