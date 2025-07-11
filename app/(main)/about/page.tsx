@@ -20,7 +20,7 @@ function WeddingDetail({ details, children, timeframe, title, alertText }: Weddi
         <p className="text-xl leading-6 mb-4">{details}</p>
       </div>
       {alertText &&
-        <div className="font-cormorant text-wedding-red text-lg font-bold mb-4">
+        <div className="font-cormorant leading-5 md:leading-6 text-wedding-red text-lg font-bold mb-4">
           <p className="">{alertText}</p>
         </div>
       }
