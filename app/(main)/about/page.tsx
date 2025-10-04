@@ -9,7 +9,7 @@ interface WeddingDetailProps {
   alertText?: string;
 }
 
-export function WeddingDetail({ details, children, timeframe, title, alertText }: WeddingDetailProps) {
+function WeddingDetail({ details, children, timeframe, title, alertText }: WeddingDetailProps) {
   return (
     <section className="mb-16">
       <h2 className="font-cormorant text-3xl text-left ">{timeframe}</h2>
@@ -31,7 +31,7 @@ export function WeddingDetail({ details, children, timeframe, title, alertText }
   );
 }
 
-export function LocationLinkWrapper({ children, link }: { children: React.ReactNode; link: string }) {
+function LocationLinkWrapper({ children, link }: { children: React.ReactNode; link: string }) {
   return (
     <Link className="group flex items-start gap-2 text-lg font-medium hover:text-wedding-red" href={link}>
       <MapPin className="group-hover:animate-bounce mt-1 text-wedding-red" />
