@@ -14,9 +14,6 @@ export default function MainLayout({
           <Link href="/rsvp" className="hover:text-wedding-red">
             RSVP
           </Link>
-          <Link href="/meet-and-greet" className="hover:text-wedding-red">
-            MEET & GREET
-          </Link>
           <Link href="/about" className="hover:text-wedding-red">
             ABOUT
           </Link>
@@ -36,9 +33,6 @@ export default function MainLayout({
           <div className="font-bold flex flex-row h-full gap-6 text-center items-center justify-center px-10">
             <Link href="/rsvp" className="hover:text-wedding-red">
               RSVP
-            </Link>
-            <Link href="/meet-and-greet" className="hover:text-wedding-red">
-              MEET
             </Link>
             <Link href="/about" className="hover:text-wedding-red">
               ABOUT
