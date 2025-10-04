@@ -14,6 +14,9 @@ export default function MainLayout({
           <Link href="/rsvp" className="hover:text-wedding-red">
             RSVP
           </Link>
+          <Link href="/meet-and-greet" className="hover:text-wedding-red">
+            MEET & GREET
+          </Link>
           <Link href="/about" className="hover:text-wedding-red">
             ABOUT
           </Link>
@@ -28,11 +31,14 @@ export default function MainLayout({
       </nav>
 
       {/* Mobile navbar space - always reserved but no links */}
-      <nav className="font-cormorant text-xl border-t-2 px-5 w-full h-16 md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white">
+      <nav className="font-cormorant text-lg border-t-2 px-5 w-full h-16 md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white">
         <div className="max-w-[750px] mx-auto h-full px-4">
           <div className="font-bold flex flex-row h-full gap-6 text-center items-center justify-center px-10">
             <Link href="/rsvp" className="hover:text-wedding-red">
               RSVP
+            </Link>
+            <Link href="/meet-and-greet" className="hover:text-wedding-red">
+              MEET
             </Link>
             <Link href="/about" className="hover:text-wedding-red">
               ABOUT
